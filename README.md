@@ -1,7 +1,7 @@
 Gunard
 =============
 
-Gunard is a simple-but-beautiful responsive grid built on SASS.
+Gunard is a simple-but-beautiful responsive grid built on SASS. [See it in action.](http://joelhans.github.com/Gunard/)
 
 It's also what I use on all my web design/development projects.
 
