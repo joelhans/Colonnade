@@ -34,7 +34,7 @@ If you don't know what SASS is, this is what you want.
 
 Put the gunard-min.css file in the same folder as your other CSS files. Then, add the following to the <em>head</em> section of your page:
 
-`&lt;link href="/path-to-CSS-files/gunard.css" media="screen, projection" rel="stylesheet" type="text/css" &#47;&gt;`
+`<link href="/path-to-CSS-files/gunard.css" media="screen, projection" rel="stylesheet" type="text/css" />`
 
 When you refresh the page, your site will be Gunard-powered.
 
