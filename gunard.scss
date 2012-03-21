@@ -40,7 +40,7 @@ $gutterWidth	:		20px;
 	zoom: 1;
 }
 
-[class*="column"] {
+[class*="column-"] {
 	margin-left: $gutterWidth / 2;
 	margin-right: $gutterWidth / 2;
 	float: left;
@@ -70,15 +70,15 @@ $gutterWidth	:		20px;
 }
 
 //	Nested columns. Whoa, nelly! Check out these bad boys.
-[class*="column"] > .row {
+[class*="column-"] > .row {
 	margin-bottom: 0px;
 }
 
-[class*="column"] > .row > [class*="column"]:first-child {
+[class*="column-"] > .row > [class*="column-"]:first-child {
 	margin-left: 0px;
 }
 
-[class*="column"] > .row > [class*="column"]:last-child  {
+[class*="column-"] > .row > [class*="column-"]:last-child  {
 	margin-right: 0px;
 }
 
@@ -134,14 +134,14 @@ $gutterWidth	:		20px;
 		width: $containerWidth;
 	}
 
-	[class*="column"] {
+	[class*="column-"] {
 		width: $containerWidth;
 		margin-left: 0px;
 		margin-right: 0px;
 		margin-bottom: 5px;
 	}
 
-	[class*="offset"] {
+	[class*="offset-"] {
 		margin-left: 0px;
 	}
 
@@ -155,14 +155,14 @@ $gutterWidth	:		20px;
 		width: $containerWidth;
 	}
 
-	[class*="column"] {
+	[class*="column-"] {
 		width: $containerWidth;
 		margin-left: 0px;
 		margin-right: 0px;
 		margin-bottom: 5px;
 	}
 
-	[class*="offset"] {
+	[class*="offset-"] {
 		margin-left: 0px;
 	}
 
