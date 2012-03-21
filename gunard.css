@@ -1,21 +1,27 @@
-/*
+/***********************************************************************************
 *	This is Gunard, a simple-but-beautiful responsive grid built on SASS.
 *
 *	I was built by Joel Hans (http://designbyjoel.com).
 *	Feel free to use this grid or adapt it to your own needs under the GPL license.
 *	License: http://www.gnu.org/copyleft/gpl.html
 *
-*/
-/*
-*	Standard styles for container, rows, columns.
-*	
-*	Nothing too special here, really.
-*/
-* {
+***********************************************************************************/
+/***********************************************************************************
+*	Border-box: http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+*	I would use the * selector, but I don't want to interfere with
+*	a use case that is not compatible with the new box model.
+***********************************************************************************/
+.container, .row, [class*="column-"] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/***********************************************************************************
+*	Standard styles for container, rows, columns.
+*	
+*	Nothing too special here, really.
+***********************************************************************************/
 .container {
   position: relative;
   width: 960px;
@@ -32,13 +38,13 @@
   float: left;
   display: inline; }
 
-/*
+/***********************************************************************************
 *	Columns
 *	
 *	Herein lies the SASS magic that builds the styles for
 *	each column and the offsets. It will use the user-configurable 
 *	variables for its logic.
-*/
+***********************************************************************************/
 .column-1 {
   width: 60px; }
 
@@ -128,13 +134,13 @@
 .row:after {
   clear: both; }
 
-/*
+/***********************************************************************************
 *	Responsiveness
 *	
 *	Now that we have the basic grid out of the way, we can
 *	completely muck it up with some media queries based on
 *	some good break points.
-*/
+***********************************************************************************/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px; }
@@ -207,27 +213,17 @@
 
   .offset-11 {
     margin-left: 714px; } }
+@media only screen and (max-width: 767px) {
+  [class*="offset-"] {
+    margin-left: 0px; }
+
+  [class*="column-"] {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 420px; }
-
-  [class*="column-"] {
-    width: 420px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 5px; }
-
-  [class*="offset-"] {
-    margin-left: 0px; } }
+  .container, [class*="column-"] {
+    width: 420px; } }
 @media only screen and (max-width: 479px) {
-  .container {
-    width: 300px; }
-
-  [class*="column-"] {
-    width: 300px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 5px; }
-
-  [class*="offset-"] {
-    margin-left: 0px; } }
+  .container, [class*="column-"] {
+    width: 300px; } }
