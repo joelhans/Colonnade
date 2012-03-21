@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Gunard</title>
+	<meta description="Gunard is a simple-but-beautiful responsive grid built on SASS." />
+
+	<link href="gunard.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<link rel="stylesheet" href="/public/style/ie.css" media="screen, projection" />
+	<![endif]-->
+
+	<style>
+
+	.container {
+		margin-top: 40px;
+	}
+
+	h2 {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	*[class*="column"] {
+		text-align: center;
+		background-color: rgba(242, 242, 242, 1);
+		border: 1px dotted rgba(255, 102, 51, 1);
+	}
+
+	.nested {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: rgba(222, 222, 222, 1);
+		border: 0px;
+	}
+
+	.instructions {
+		text-align: left;
+		padding: 10px;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>This is Gunard.</h1>
+
+		<p>I'm a responsive grid for SASS users. I'm lightweight but I get the job done. I was made by <a href="http://designbyjoel.com">Joel Hans</a>. You can see me on Github, too.</p>
+
+		<h2>The basic grid. You've seen this before.</h2>
+
+		<section class="row">
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-4">
+				<p>Four.</p>
+			</div>
+			<div class="column-4">
+				<p>Four.</p>
+			</div>
+			<div class="column-4">
+				<p>Four.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-4">
+				<p>Four.</p>
+			</div>
+			<div class="column-8">
+				<p>Eight.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-6">
+				<p>Six.</p>
+			</div>
+			<div class="column-6">
+				<p>Six.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-12">
+				<p>Twelve.</p>
+			</div>
+		</section>
+
+		<h2>Yeah, I can do offsets, too.</h2>
+
+		<section class="row">
+			<div class="column-4 offset-4">
+				<p>Four.</p>
+			</div>
+			<div class="column-2 offset-2">
+				<p>Two.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-8 offset-2">
+				<p>Eight.</p>
+			</div>
+			<div class="column-1 offset-1">
+				<p>One.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-2 offset-1">
+				<p>Two.</p>
+			</div>
+			<div class="column-2 offset-2">
+				<p>Two.</p>
+			</div>
+			<div class="column-2 offset-2">
+				<p>Two.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-1 offset-5">
+				<p>One.</p>
+			</div>
+			<div class="column-1">
+				<p>One.</p>
+			</div>
+		</section>
+
+		<h2>Nested? It's all about the big spoon / little spoon.</h2>
+
+		<section class="row">
+			<div class="column-8 nested">
+				<div class="row">
+					<div class="column-4">
+						<p>Four in nest.</p>
+					</div>
+					<div class="column-4">
+						<p>Four in nest.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-6 offset-4 nested">
+				<div class="row">
+					<div class="column-2">
+						<p>Two in nest.</p>
+					</div>
+					<div class="column-4">
+						<p>Four in nest.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="column-12 nested">
+				<div class="row">
+					<div class="column-6">
+						<p>Six in nest.</p>
+					</div>
+					<div class="column-6">
+						<p>Six in nest.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<h2>Installation</h2>
+
+		<section class="row">
+			<p>This is pretty simple. You have two options:</p>
+			<div class="column-6 instructions">
+				<h3>SASS</h3>
+				<p>The easiest way to let Gunard power your site is to place the gunard.scss file in the same folder as the rest of your SASS files.</p>
+				<p>Once you've done that, including Gunard's responsive grid into your design is a simple as writing the following in your main SASS file:</p>
+				<code>
+					@import "gunard";
+				</code>
+				<p>It will be compiled with the rest of your styles. That's the beauty of SASS.</p>
+			</div>
+			<div class="column-6 instructions">
+				<h3>CSS</h3>
+				<p>If you don't know what SASS is, this is what you want.</p>
+				<p>Put the gunard-min.css file in the same folder as your other CSS files. Then, add the following to the <em>head</em> section of your page:</p>
+				<code>
+					&lt;link href="/path-to-CSS-files/gunard.css" media="screen, projection" rel="stylesheet" type="text/css" &#47;&gt;
+				</code>
+				<p>When you refresh the page, your site will be Gunard-powered.</p>
+				<p>You can also copy the contents of gunard-min.css into the top of your main CSS file. Remember that the less HTTP requests you make, the faster your page loads. Hence, this is often the better solution.</p>
+				<p>"What about the gunard.css file?" you might ask. Don't worry about it too much. It's mostly so that curious viewers can see what the CSS code looks like after it's been processed by SASS. For the sake of keeping file sizes down, try to use the gunard-min.css file whenever possible.</p>
+			</div>
+		</section>
+
+		<h2>Thanks for looking!</h2>
+
+	</div>
+
+</body>
+
+</html>
