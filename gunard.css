@@ -6,6 +6,7 @@
 *	License: http://www.gnu.org/copyleft/gpl.html
 *
 ***********************************************************************************/
+/* Use media queries for grids larger than 960px? Set to false if you don't want them. */
 /***********************************************************************************
 *	Border-box: http://paulirish.com/2012/box-sizing-border-box-ftw/
 *
@@ -141,6 +142,150 @@
 *	completely muck it up with some media queries based on
 *	some good break points.
 ***********************************************************************************/
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 1400px; }
+
+  .column-1 {
+    width: 96.667px; }
+
+  .column-2 {
+    width: 213.333px; }
+
+  .column-3 {
+    width: 330px; }
+
+  .column-4 {
+    width: 446.667px; }
+
+  .column-5 {
+    width: 563.333px; }
+
+  .column-6 {
+    width: 680px; }
+
+  .column-7 {
+    width: 796.667px; }
+
+  .column-8 {
+    width: 913.333px; }
+
+  .column-9 {
+    width: 1030px; }
+
+  .column-10 {
+    width: 1146.667px; }
+
+  .column-11 {
+    width: 1263.333px; }
+
+  .column-12 {
+    width: 1380px; }
+
+  .offset-1 {
+    margin-left: 126.667px; }
+
+  .offset-2 {
+    margin-left: 243.333px; }
+
+  .offset-3 {
+    margin-left: 360px; }
+
+  .offset-4 {
+    margin-left: 476.667px; }
+
+  .offset-5 {
+    margin-left: 593.333px; }
+
+  .offset-6 {
+    margin-left: 710px; }
+
+  .offset-7 {
+    margin-left: 826.667px; }
+
+  .offset-8 {
+    margin-left: 943.333px; }
+
+  .offset-9 {
+    margin-left: 1060px; }
+
+  .offset-10 {
+    margin-left: 1176.667px; }
+
+  .offset-11 {
+    margin-left: 1293.333px; } }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    width: 1140px; }
+
+  .column-1 {
+    width: 75px; }
+
+  .column-2 {
+    width: 170px; }
+
+  .column-3 {
+    width: 265px; }
+
+  .column-4 {
+    width: 360px; }
+
+  .column-5 {
+    width: 455px; }
+
+  .column-6 {
+    width: 550px; }
+
+  .column-7 {
+    width: 645px; }
+
+  .column-8 {
+    width: 740px; }
+
+  .column-9 {
+    width: 835px; }
+
+  .column-10 {
+    width: 930px; }
+
+  .column-11 {
+    width: 1025px; }
+
+  .column-12 {
+    width: 1120px; }
+
+  .offset-1 {
+    margin-left: 105px; }
+
+  .offset-2 {
+    margin-left: 200px; }
+
+  .offset-3 {
+    margin-left: 295px; }
+
+  .offset-4 {
+    margin-left: 390px; }
+
+  .offset-5 {
+    margin-left: 485px; }
+
+  .offset-6 {
+    margin-left: 580px; }
+
+  .offset-7 {
+    margin-left: 675px; }
+
+  .offset-8 {
+    margin-left: 770px; }
+
+  .offset-9 {
+    margin-left: 865px; }
+
+  .offset-10 {
+    margin-left: 960px; }
+
+  .offset-11 {
+    margin-left: 1055px; } }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px; }

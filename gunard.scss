@@ -19,6 +19,9 @@ $containerWidth :		960px;
 $columnNumber	:		12;
 $gutterWidth	:		20px;
 
+/* Use media queries for grids larger than 960px? Set to false if you don't want them. */
+$bigGrids		:		true;
+
 /***********************************************************************************
 *	Border-box: http://paulirish.com/2012/box-sizing-border-box-ftw/
 *
@@ -109,6 +112,50 @@ $gutterWidth	:		20px;
 *	completely muck it up with some media queries based on
 *	some good break points.
 ***********************************************************************************/
+
+@if $bigGrids == true { @media only screen and (min-width: 1400px) {
+
+	$containerWidth: 1400px;
+
+	.container {
+		width: $containerWidth;
+	}
+
+	@for $i from 1 through $columnNumber {
+		.column-#{$i} {
+			width: (($containerWidth / 12) * $i - 20);
+		}
+	}
+
+	@for $i from 1 through ($columnNumber - 1) {
+		.offset-#{$i} {
+			margin-left: (($containerWidth / 12) * $i + 10);
+		}
+	}
+
+} }
+
+@if $bigGrids == true { @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+	$containerWidth: 1140px;
+
+	.container {
+		width: $containerWidth;
+	}
+
+	@for $i from 1 through $columnNumber {
+		.column-#{$i} {
+			width: (($containerWidth / 12) * $i - 20);
+		}
+	}
+
+	@for $i from 1 through ($columnNumber - 1) {
+		.offset-#{$i} {
+			margin-left: (($containerWidth / 12) * $i + 10);
+		}
+	}
+
+} }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
