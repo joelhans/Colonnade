@@ -47,7 +47,6 @@ You can also copy the contents of gunard-min.css into the top of your main CSS f
 TODO
 ----
 
-* Support for bigger sites (1200px) via media queries.
 * Support for media query break points at a user's specifications (perhaps).
 
 Credits
