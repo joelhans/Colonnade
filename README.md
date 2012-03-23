@@ -28,6 +28,8 @@ Once you've done that, including Gunard's responsive grid into your design is a 
 
 It will be compiled with the rest of your styles. That's the beauty of SASS.
 
+If you don't want larger grids (that is, anything bigger than 960px) via media queries, you can disable them by setting the `bigGrids` variable to *false*.
+
 ### CSS
 
 If you don't know what SASS is, this is what you want.
