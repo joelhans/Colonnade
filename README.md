@@ -13,7 +13,7 @@ That's a good question. Use it because it's simpler than adding all of Twitter B
 Why 'Colonnade'?
 -------------
 
-Colonnade was my grandfather. He was an architect. Things just fit.
+My grandfather was an architect. I never was able to meet him, so I'm always trying to do work in his honor. A colonnade is *a long series of columns joined by an entablature*. They're beautiful. They're classical.
 
 Installation
 ------------
