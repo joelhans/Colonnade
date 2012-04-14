@@ -53,6 +53,7 @@ $bigGrids		:		true;
 	margin-left: $gutterWidth / 2;
 	margin-right: $gutterWidth / 2;
 	float: left;
+	position: relative;
 	display: inline;
 }
 
@@ -101,9 +102,9 @@ $bigGrids		:		true;
 	height: 0;
 }
 
-.row:after {
-	clear: both;
-}
+.row:after { clear: both; }
+
+.row { zoom: 1; }
 
 /***********************************************************************************
 *	Responsiveness
