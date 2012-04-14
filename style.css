@@ -1,0 +1,44 @@
+/**************************
+*
+*	Extra  styles for the example Colonnade page on Github.
+*	These are not necessary to make Colonnade work!
+*
+**************************/
+h1, h2, h3, p {
+  font-family: 'Oxygen', sans-serif; }
+
+.container {
+  margin-top: 40px; }
+
+h2 {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+h3 {
+  text-align: center; }
+
+a {
+  color: #7a142d;
+  text-decoration: none; }
+  a:hover {
+    color: #75a3d1; }
+
+*[class*="column"] {
+  text-align: center;
+  background-color: #fafafa;
+  border: 2px solid #75a3d1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.nested {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #dedede;
+  border: 0px; }
+
+.instructions {
+  text-align: left;
+  padding: 10px; }
