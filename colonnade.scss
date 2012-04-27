@@ -93,7 +93,7 @@ $bigGrids		:		true;
 }
 
 // Some final row fixes.
-.row:before, .row:after {
+.row:before, .row:after, .container:after {
 	content: '\0020';
 	display: block;
 	overflow: hidden;
@@ -102,9 +102,7 @@ $bigGrids		:		true;
 	height: 0;
 }
 
-.row:after { clear: both; }
-
-.row { zoom: 1; }
+.row:after, .container:after { clear: both; }
 
 /***********************************************************************************
 *	Responsiveness
