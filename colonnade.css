@@ -125,7 +125,7 @@
 [class*="column-"] > .row > [class*="column-"]:last-child {
   margin-right: 0px; }
 
-.row:before, .row:after {
+.row:before, .row:after, .container:after {
   content: '\0020';
   display: block;
   overflow: hidden;
@@ -133,11 +133,8 @@
   width: 0;
   height: 0; }
 
-.row:after {
+.row:after, .container:after {
   clear: both; }
-
-.row {
-  zoom: 1; }
 
 /***********************************************************************************
 *	Responsiveness
