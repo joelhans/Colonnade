@@ -143,150 +143,154 @@
 *	completely muck it up with some media queries based on
 *	some good break points.
 ***********************************************************************************/
+@media only screen and (min-width: 1200px) {
+  [class*="column-"] {
+    margin-left: 20px;
+    margin-right: 20px; } }
 @media only screen and (min-width: 1400px) {
   .container {
     width: 1400px; }
 
   .column-1 {
-    width: 96.667px; }
+    width: 76.667px; }
 
   .column-2 {
-    width: 213.333px; }
+    width: 193.333px; }
 
   .column-3 {
-    width: 330px; }
+    width: 310px; }
 
   .column-4 {
-    width: 446.667px; }
+    width: 426.667px; }
 
   .column-5 {
-    width: 563.333px; }
+    width: 543.333px; }
 
   .column-6 {
-    width: 680px; }
+    width: 660px; }
 
   .column-7 {
-    width: 796.667px; }
+    width: 776.667px; }
 
   .column-8 {
-    width: 913.333px; }
+    width: 893.333px; }
 
   .column-9 {
-    width: 1030px; }
+    width: 1010px; }
 
   .column-10 {
-    width: 1146.667px; }
+    width: 1126.667px; }
 
   .column-11 {
-    width: 1263.333px; }
+    width: 1243.333px; }
 
   .column-12 {
-    width: 1380px; }
+    width: 1360px; }
 
   .offset-1 {
-    margin-left: 126.667px; }
+    margin-left: 136.667px; }
 
   .offset-2 {
-    margin-left: 243.333px; }
+    margin-left: 253.333px; }
 
   .offset-3 {
-    margin-left: 360px; }
+    margin-left: 370px; }
 
   .offset-4 {
-    margin-left: 476.667px; }
+    margin-left: 486.667px; }
 
   .offset-5 {
-    margin-left: 593.333px; }
+    margin-left: 603.333px; }
 
   .offset-6 {
-    margin-left: 710px; }
+    margin-left: 720px; }
 
   .offset-7 {
-    margin-left: 826.667px; }
+    margin-left: 836.667px; }
 
   .offset-8 {
-    margin-left: 943.333px; }
+    margin-left: 953.333px; }
 
   .offset-9 {
-    margin-left: 1060px; }
+    margin-left: 1070px; }
 
   .offset-10 {
-    margin-left: 1176.667px; }
+    margin-left: 1186.667px; }
 
   .offset-11 {
-    margin-left: 1293.333px; } }
+    margin-left: 1303.333px; } }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
     width: 1140px; }
 
   .column-1 {
-    width: 75px; }
+    width: 55px; }
 
   .column-2 {
-    width: 170px; }
+    width: 150px; }
 
   .column-3 {
-    width: 265px; }
+    width: 245px; }
 
   .column-4 {
-    width: 360px; }
+    width: 340px; }
 
   .column-5 {
-    width: 455px; }
+    width: 435px; }
 
   .column-6 {
-    width: 550px; }
+    width: 530px; }
 
   .column-7 {
-    width: 645px; }
+    width: 625px; }
 
   .column-8 {
-    width: 740px; }
+    width: 720px; }
 
   .column-9 {
-    width: 835px; }
+    width: 815px; }
 
   .column-10 {
-    width: 930px; }
+    width: 910px; }
 
   .column-11 {
-    width: 1025px; }
+    width: 1005px; }
 
   .column-12 {
-    width: 1120px; }
+    width: 1100px; }
 
   .offset-1 {
-    margin-left: 105px; }
+    margin-left: 115px; }
 
   .offset-2 {
-    margin-left: 200px; }
+    margin-left: 210px; }
 
   .offset-3 {
-    margin-left: 295px; }
+    margin-left: 305px; }
 
   .offset-4 {
-    margin-left: 390px; }
+    margin-left: 400px; }
 
   .offset-5 {
-    margin-left: 485px; }
+    margin-left: 495px; }
 
   .offset-6 {
-    margin-left: 580px; }
+    margin-left: 590px; }
 
   .offset-7 {
-    margin-left: 675px; }
+    margin-left: 685px; }
 
   .offset-8 {
-    margin-left: 770px; }
+    margin-left: 780px; }
 
   .offset-9 {
-    margin-left: 865px; }
+    margin-left: 875px; }
 
   .offset-10 {
-    margin-left: 960px; }
+    margin-left: 970px; }
 
   .offset-11 {
-    margin-left: 1055px; } }
+    margin-left: 1065px; } }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px; }

@@ -112,6 +112,13 @@ $bigGrids		:		true;
 *	some good break points.
 ***********************************************************************************/
 
+@if $bigGrids == true { @media only screen and (min-width: 1200px) {
+	[class*="column-"] {
+		margin-left: $gutterWidth;
+		margin-right: $gutterWidth;
+	}
+} }
+
 @if $bigGrids == true { @media only screen and (min-width: 1400px) {
 
 	$containerWidth: 1400px;
@@ -122,13 +129,13 @@ $bigGrids		:		true;
 
 	@for $i from 1 through $columnNumber {
 		.column-#{$i} {
-			width: (($containerWidth / 12) * $i - 20);
+			width: (($containerWidth / 12) * $i - 40);
 		}
 	}
 
 	@for $i from 1 through ($columnNumber - 1) {
 		.offset-#{$i} {
-			margin-left: (($containerWidth / 12) * $i + 10);
+			margin-left: (($containerWidth / 12) * $i + 20);
 		}
 	}
 
@@ -144,13 +151,13 @@ $bigGrids		:		true;
 
 	@for $i from 1 through $columnNumber {
 		.column-#{$i} {
-			width: (($containerWidth / 12) * $i - 20);
+			width: (($containerWidth / 12) * $i - 40);
 		}
 	}
 
 	@for $i from 1 through ($columnNumber - 1) {
 		.offset-#{$i} {
-			margin-left: (($containerWidth / 12) * $i + 10);
+			margin-left: (($containerWidth / 12) * $i + 20);
 		}
 	}
 
